@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+  </head>
+
+
+
+
+
+
+  <body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+  </body>
+
+
+
+  <script>
+    var data =
+    [{city:"toronto",pop:2900000},{city; "montreal",pop:1700000},{city:"vancouver",pop:700000}];
+
+    var c =
+    document.getElementById("mycanvas");
+    var ctx = c.getContext('2d');
+
+    ctx.fillRect(0,0,data[0].pop/10000,50);
+    ctx.fillRect(0,55,data[1].pop/10000,50);
+    ctx.fillRect(0,110,data[2].pop/10000,50);
+  </script>
+
+
+
+
+
+</html>

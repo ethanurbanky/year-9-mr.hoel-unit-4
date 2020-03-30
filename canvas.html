@@ -1,0 +1,49 @@
+html>
+
+    <head>
+        <script src="data1_1_1.json"></script>
+    </head>
+
+    <body>
+        <h1>CAGE MATCH</h1>
+        <h3>Hard coded inefficient code vs Algo code</h3>
+        <button onclick="drawAlgo()">Algo</button>
+        <div id="mydata"></div>
+        
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        
+    </body>
+   
+    <script>
+        
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+ 
+                
+        function drawAlgo() { // this code is better as it uses 1/2 as much code
+            
+            y = 0;
+            w = 800;
+            a = 400;
+            z = 30;
+            for (num = 0; num < 8; num++) {
+                ctx.fillStyle = "red";
+                ctx.fillRect(0,y,w,50);
+                ctx.fillStyle = "white";
+                ctx.fillText(w,a,z);
+                y = y + 60;
+                w = w - 100;
+                a = a - 50;
+                z = z +  60;
+               
+                
+            }
+            
+            document.getElementById("mydata").innerHTML = "<p>Efficient algorithm code</p>";
+            
+        }
+        
+    </script>
+
+
